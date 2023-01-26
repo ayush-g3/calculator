@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="css-sheet" href="style-light.css">
+    <link rel="stylesheet" href="style-grapher.css">
+</head>
+<body>
+    <div id="main-calculator">
+        <div id="history-container">
+            <span>History</span>
+            <input type="button" value="Clear" id="btn-clear-history">
+            <ul id="history-list"></ul>
+        </div>
+        <div id="container">
+            <div id="hidden-text-area"></div>
+            <div id="visible-text-area"></div>
+            <br>
+            <div id="dig-buttons-container">
+                <input type="button" value="0" id="0">
+                <input type="button" value="1" id="1">
+                <input type="button" value="2" id="2">
+                <input type="button" value="3" id="3">
+                <input type="button" value="4" id="4">
+                <input type="button" value="5" id="5">
+                <input type="button" value="6" id="6">
+                <input type="button" value="7" id="7">
+                <input type="button" value="8" id="8">
+                <input type="button" value="9" id="9">
+            </div><br>
+            <div id="math">
+                <input type="button" value="e" id="btn-e">
+                <input type="button" value="Pi" id="btn-pi">
+                <input type="button" value="sqrt" id="btn-sqrt">
+                <input type="button" value="(" id="btn-bracket-left">
+                <input type="button" value=")" id="btn-bracket-right">
+                <input type="button" value="." id="btn-decimal">
+            </div><br>
+            <div id="arithematic">
+                <input type="button" value="+" id="btn-add">
+                <input type="button" value="-" id="btn-sub">
+                <input type="button" value="*" id="btn-multiply">
+                <input type="button" value="/" id="btn-div">
+                <input type="button" value="^" id="btn-pow">
+                <input type="button" value="factorial" id="btn-factorial">
+            </div><br>
+            <div id="trigo">
+                <div id="type">
+                    <label for="btn-degree">Degree</label>
+                    <input class="degree" type="radio" id="btn-degree">
+                    <label for="btn-radian">Radian</label>
+                    <input class="radian" type="radio" id="btn-radian">
+                </div>
+                <br><br>
+                <div class="trig">
+                    <input type="button" value="sin" id="btn-sin">
+                    <input type="button" value="cos" id="btn-cos">
+                    <input type="button" value="tan" id="btn-tan">
+                    <br><br>
+                    <input type="button" value="arcsin" id="btn-arcsin">
+                    <input type="button" value="arccos" id="btn-arccos">
+                    <input type="button" value="arctan" id="btn-arctan">
+                </div>
+            </div><br>
+            <div id="misc">
+                <input type="button" value="log" id="btn-log">
+                <input type="button" value="e^x" id="btn-expo">
+                <br><br>
+            </div>
+            <div id="digs">
+                <label class="dig-label" class="digs" for="no-of-digs">Number of digits after decimal(max 15): </label>
+                <input class="digs-input" type="text" value="15" id="no-of-digs">
+            </div>
+            <div id="calculate">
+                <br>
+                <input class="yellow" type="button" value="Backspace" id="btn-backspace">
+                <input class="red" type="button" value="Clear" id="btn-clear">
+                <input class="green" type="button" value="Calculate" id="btn-calc">
+            </div>
+            <br>
+        </div>
+        <div id="info">
+            <ul>
+                <li><p>Clear previous result before entering new value</p></li>
+                <br>
+                <li><p>Multiplication sign can not be skipped with brackets and other places</p></li>
+            </ul>
+        </div>
+        <input type="button" value="Grapher" id="btn-grapher">
+        <input type="button" value="Dark Mode" id="change-theme">
+    </div>
+    <!--  -->
+    <div id="main-grapher">
+        <label for="btn-close-grapher">Graphing Calculator</label>
+        <input type="button" value="Close" id="btn-close-grapher">
+        <div id="grapher">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.desmos.com/api/v1.7/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script>
+        var grapher = document.getElementById('grapher');
+        var calculator = Desmos.GraphingCalculator(grapher);
+        calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
+    </script>
+</body>
+</html>

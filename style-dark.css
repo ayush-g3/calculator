@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+.yellow{
+    box-shadow: 1px 1px 1px 1px rgb(92, 92, 1);
+}
+.red{
+    box-shadow: 1px 1px 1px 1px rgba(255, 0, 0, 0.664);
+}
+.green{
+    box-shadow: 1px 1px 1px 1px rgba(26, 232, 16, 0.829);
+}
+input[type=radio]{
+    box-shadow: none;
+}
+input{
+    border: 1px white solid;
+    box-shadow: 1px 1px 1px 1px white;
+}
+#visible-text-area{
+    color: black;
+    background-color: lightgrey;
+}
+#container{
+    border: 1px white solid;
+}
+#dig-buttons-container input{
+    background-color: lightgrey;
+}
+#arithematic input{
+    background-color: lightgrey;
+}
+#math input{
+    background-color: lightgrey;
+}
+#info{
+    color: white;
+}
+#trigo label{
+    color: white;
+}
+#trigo .trig input{
+    background-color: lightgrey;
+}
+.dig-label{
+    color: white;
+}
+#digs .digs-input{
+    background-color: lightgrey;
+}
+#misc input{
+    background-color: lightgrey;
+}
+#change-theme{
+    background-color: lightgrey;
+}
+#btn-grapher{
+    background-color: lightgrey;
+}
+#history-container{
+    color: white;
+}
+#history-container input{
+    box-shadow: 0 0 15px rgba(60, 76, 245, 0.884);
+}
+#main-grapher label{
+    color: white;
+}

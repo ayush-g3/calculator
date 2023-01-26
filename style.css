@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: large;
+}
+.yellow{
+    background-color: rgba(255, 255, 0, 0.776);
+    border: 1px rgba(181, 181, 7, 0.909) solid;
+    border-radius: 1px;
+}
+.red{
+    background-color: rgba(255, 0, 0, 0.888);
+    border: 1px rgba(255, 0, 0, 0.664) solid;
+    border-radius: 1px;
+}
+.green{
+    background-color: rgba(26, 232, 16, 0.829);
+    border: 1px rgba(26, 232, 16, 0.829) solid;
+    border-radius: 1px;
+}
+#container{
+    position: absolute;
+    left: 50%;
+    top: 1px;
+    transform: translate(-50%, 0);
+    width: 50%;
+    border-radius: 10px;
+}
+#dig-buttons-container input{
+    width: 8%;
+    height: 30px;
+    white-space: nowrap;
+}
+#container{
+    border: 2px black solid;
+}
+#arithematic input{
+    width: 12.5%;
+    height: 30px;
+}
+#math input{
+    width: 13.5%;
+    height: 30px;
+}
+#info{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+#info p{
+    text-align: left;
+}
+#trigo .degree{
+    margin-right: 40px;
+}
+#trigo label{
+    font-size: 25px;
+    user-select: none;
+}
+#trigo .trig input{
+    width: 25%;
+    height: 30px;
+}
+.dig-label{
+    font-size: 20px;
+}
+#digs .digs-input{
+    width: 35px;
+}
+#calculate input{
+    width: 25%;
+    height: 30px;
+}
+#misc input{
+    width: 38%;
+    height: 30px;
+}
+#type:hover{
+    cursor: pointer;
+}
+#hidden-text-area{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+#visible-text-area{
+    color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: 10px 10px 0 10px;
+    height: 60px;
+    background-color: black;
+}
+#change-theme{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 2px;
+    height: 40px;
+    width: 100px;
+}
+#change-theme:hover{
+    cursor: pointer;
+}
+#btn-grapher{
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    border-radius: 2px;
+    height: 40px;
+    width: 100px;
+}
+#btn-grapher:hover{
+    cursor: pointer;
+}
+#history-container{
+    width: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    max-width: 300px;
+    text-align: left;
+}
+#history-container span{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#history-container input{
+    width: 70px;
+    height: 25px;
+    background-color: rgba(72, 124, 255, 0.781);
+    border: 2px rgba(37, 54, 242, 0.884) solid;
+    border-radius: 10px;
+}
+
+#history-list{
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 3px;
+}
+#history-list li{
+    text-align: left;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 992px) {
+    #btn-grapher{
+        top: 80px;
+        right: 7%;
+    }
+    #change-theme{
+        right: 7%;
+    }
+    #info{
+        visibility: hidden;
+    }
+  }
+@media screen and (max-width: 876px) {
+    #history-container{
+        width: 200px;
+    }
+    #btn-grapher{
+        top: 80px;
+        right: 2%;
+    }
+    #change-theme{
+        right: 2%;
+    }
+}
